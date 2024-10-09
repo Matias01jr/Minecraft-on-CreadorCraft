@@ -1,0 +1,25 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: ${{ !contains(github.event.head_commit.message, '[ci skip]') }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Scratch-CreadorCraft-Maker
+        uses: Creadores-Program/Scratch-to-CreadorCraft-Maker-GHA@v1.0.0
+        with:
+          path: "./src"
+          pathGame: "./Game.sb3" # cambia por el nombre del archivo pero no quites ./
+          enableGamepad: true
+      - name: CreadorCraft-Maker
+        uses: Creadores-Program/CreadorCraft-Maker-GHA@v1.1.0
+        with:
+          path: "./src"
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: My Game Example
+          path: gameBuildCCM/TestName 1.0.0.creadorcraftgame.zip # cambia el nombre por el nombre de tu juego y la versión 
