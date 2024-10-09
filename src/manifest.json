@@ -1,8 +1,0 @@
-{
- "name": "TestName",
- "description": "Test game",
- "version": "1.0.0",
- "mainHtml": "index.html",
- "mainCSS": "index.css",
- "mainJS": "main.js"
-}
