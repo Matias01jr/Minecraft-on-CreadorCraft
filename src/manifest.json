@@ -1,6 +1,6 @@
 {
- "name": "TestName",
- "description": "Test game",
+ "name": "Creadorcraft Crafting",
+ "description": "Un juego de conseguir recursos, minerales y constrir, ¡dónde tu imaginación vuela!",
  "version": "1.0.0",
  "mainHtml": "index.html",
  "mainCSS": "index.css",
