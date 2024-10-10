@@ -22,4 +22,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: My Game Example
-          path: gameBuildCCM/TestName 1.0.0.creadorcraftgame.zip # cambia el nombre por el nombre de tu juego y la versión 
+          path: gameBuildCCM/Creadorcraft Crafting 1.0.0.creadorcraftgame.zip # cambia el nombre por el nombre de tu juego y la versión 
