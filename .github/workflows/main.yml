@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Scratch-CreadorCraft-Maker
-        uses: Creadores-Program/Scratch-to-CreadorCraft-Maker-GHA@v1.0.0
+        uses: Creadores-Program/Scratch-to-CreadorCraft-Maker-GHA@v1.1.0
         with:
           path: "./src"
           pathGame: "./Game.sb3" # cambia por el nombre del archivo pero no quites ./
